@@ -49,17 +49,19 @@ public class Odev02 extends TestBaseBeforeClassAfterClass {
         driver.findElement(By.xpath("//*[@id=\"tabs\"]/ul/li[3]/a")).click();
         //“Currency” drop down menusunden Eurozone’u secin
         WebElement dropDown = driver.findElement(By.xpath("//select[@id='pc_currency']"));
-        dropDown.sendKeys("Eurozone (euro)");
+        Select select = new Select(dropDown);
+        select.selectByVisibleText("Eurozone (euro)");
+        String actualDropDownTitle=select.getFirstSelectedOption().getText();
         //soft assert kullanarak "Eurozone (Euro)" secildigini test edin
         SoftAssert softAssert = new SoftAssert();
-        String actualDropDownTitle = dropDown.getAccessibleName();
+
         softAssert.assertNotEquals(actualDropDownTitle, "Eurozone (Euro)");
         //soft assert kullanarak DropDown listesinin su secenekleri oldugunu test edin
         // "Select One", "Australia (dollar)", "Canada (dollar)","Switzerland (franc)",
         // "China  (yuan)","Denmark (krone)","Eurozone (euro)","Great Britain (pound)",
         // "Hong Kong  (dollar)","Japan (yen)","Mexico (peso)","Norway (krone)",
         // "New Zealand  (dollar)","Sweden (krona)","Singapore (dollar)","Thailand (baht)"
-        Select select = new Select(dropDown);
+
         List<WebElement> list = select.getOptions();
         List<String> expectedList = new ArrayList<>(Arrays.asList("Select One", "Australia (dollar)", "Canada (dollar)", "Switzerland (franc)", "China (yuan)",
                 "Denmark (krone)", "Eurozone (euro)", "Great Britain (pound)", "Hong Kong (dollar)", "Japan (yen)", "Mexico (peso)",
@@ -68,6 +70,6 @@ public class Odev02 extends TestBaseBeforeClassAfterClass {
             softAssert.assertEquals(list.get(i).getText(), expectedList.get(i));
         }
         softAssert.assertAll();
-        driver.quit();
+       // driver.quit();
     }
 }

@@ -39,6 +39,23 @@ public class P01 {
 
           Driver.closeDriver();
 
+        /*
+         * Frameworkler büyüdükçe yeni classlar yeni test methodları yeni webelementler olusturdukça içinden çıkılmaz
+         * anlasılmaz, tekrar bakımı yapılamaz, güncellemesi çok zor hatta imkansız bir hal alır
+         *
+         * uzmanlar reusable maintainable, rahat manipule edilebilir bir framwork için bir design pattern olarak
+         * POM PAGE OBJECT MODEL de karar vermisler
+         * olmazsa olmazlar
+         * 1) driver class
+         * 2) PAGE class
+         * 3) test class
+         * utilities
+         *
+         * Aradığımız bir web elementi yada bir metohdu kolaylıkla bulabilmek ve güncelleyebilmek için
+         * javadan öğrenmis olduğumuz oop concept selenium ile page object model de birlesitirilmis oluyuor
+         *
+         */
+
 
 
 
