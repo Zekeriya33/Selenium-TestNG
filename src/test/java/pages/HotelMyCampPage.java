@@ -28,6 +28,26 @@ public class HotelMyCampPage {
     @FindBy (xpath = "(//*[text()='ListOfUsers'])[2]")
     public WebElement basariliGiris;
 
+    @FindBy (xpath = "//div[@id='divMessageResult']")
+    public WebElement basarisizGiris;
+
+    @FindBy (xpath = "//span[text()='Hotel Management']")
+    public WebElement managementButonu;
+
+    @FindBy (xpath = "(//*[@class='icon-calendar'])[4]")
+    public WebElement roomReservationButonu;
+
+    @FindBy (xpath = "//span[text()='Add Room Reservation ']")
+    public WebElement addRoomReservationButonu;
+
+    @FindBy (xpath = "//*[@id='IDUser']")
+    public WebElement idUser;
+
+    @FindBy (xpath = "//*[text()='RoomReservation was inserted successfully']")
+    public WebElement reservationAlert;
+
+    @FindBy (xpath = "//*[@class='btn btn-primary']")
+    public WebElement reservationAlertOkButonu;
 
 
 }
