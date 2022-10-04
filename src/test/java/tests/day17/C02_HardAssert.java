@@ -9,7 +9,7 @@ import utilities.TestBaseBeforeMethodAfterMethod;
 
 public class C02_HardAssert extends TestBaseBeforeMethodAfterMethod {
 
-    @Test
+    @Test (groups = "ahmet")
     public void test01() {
 
         //1-amazon anasayfaya gidin

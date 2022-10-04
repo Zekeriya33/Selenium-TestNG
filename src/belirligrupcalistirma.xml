@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="belirli grup">
+    <test name="belirli grup ">
+        <groups>
+            <run>
+                <include name="ahmet"></include>
+            </run>
+        </groups>
+        <packages>
+            <package name="tests.day17"></package>
+            <package name="tests.day19"></package>
+        </packages>
+    </test>
+    
+
+</suite>

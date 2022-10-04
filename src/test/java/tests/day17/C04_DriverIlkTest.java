@@ -5,7 +5,7 @@ import utilities.Driver;
 
 public class C04_DriverIlkTest {
 
-    @Test
+    @Test (groups = "grup1")
     public void test01() {
 
         // testbase class'ina extend ederek kullandigimiz driver yerine artik

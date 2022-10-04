@@ -8,7 +8,7 @@ import utilities.Driver;
 
 public class C03_PozitifTest {
 
-    @Test
+    @Test (groups = "ahmet")
     public void test01() {
 
 

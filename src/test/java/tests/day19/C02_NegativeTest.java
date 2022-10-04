@@ -8,7 +8,7 @@ import utilities.Driver;
 
 public class C02_NegativeTest {
 
-    @Test
+    @Test (groups = "grup2")
     public void testName() {
 
 

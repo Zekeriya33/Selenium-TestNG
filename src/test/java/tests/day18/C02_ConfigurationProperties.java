@@ -6,7 +6,7 @@ import utilities.Driver;
 
 public class C02_ConfigurationProperties {
 
-    @Test
+    @Test 
     public void test01() {
         // Amazon sayfasına ve facebook sayfasina  gidelim
         String urlamzn = ConfigReader.getProperty("amznUrl");

@@ -1,4 +1,4 @@
-package tests.day20;
+package tests.day20_SmokeTest;
 
 import com.github.javafaker.Faker;
 import org.openqa.selenium.Keys;
@@ -11,7 +11,7 @@ import utilities.Driver;
 
 public class C03_E2E {
 
-    @Test
+    @Test (groups = "grup1")
     public void E2ETest() throws InterruptedException {
 
  //   https://www.hotelmycamp.com adresine git.
