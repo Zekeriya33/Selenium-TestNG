@@ -11,7 +11,7 @@ import utilities.Driver;
 
 public class C03_E2E {
 
-    @Test (groups = "grup1")
+    @Test
     public void E2ETest() throws InterruptedException {
 
  //   https://www.hotelmycamp.com adresine git.
@@ -39,7 +39,7 @@ public class C03_E2E {
         hotelMyCampPage.idUser.sendKeys("manager");
         Actions actions = new Actions(Driver.getDriver());
         actions.sendKeys(Keys.TAB).sendKeys("Happy Hotel").
-                sendKeys(Keys.TAB).sendKeys("1500").sendKeys(Keys.TAB).sendKeys("10/02/2022").
+                sendKeys(Keys.TAB).sendKeys("1500").sendKeys(Keys.TAB).sendKeys("10/10/2022").
                 sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys("10/13/2022").sendKeys(Keys.TAB).
                 sendKeys(Keys.TAB).sendKeys("2").sendKeys(Keys.TAB).sendKeys("2").sendKeys(Keys.TAB).
                 sendKeys(faker.name().fullName()).sendKeys(Keys.TAB).sendKeys(faker.phoneNumber().cellPhone()).

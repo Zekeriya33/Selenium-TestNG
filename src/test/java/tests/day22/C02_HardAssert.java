@@ -1,4 +1,4 @@
-package tests.day17;
+package tests.day22;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -6,8 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import utilities.TestBaseBeforeMethodAfterMethod;
+import utilities.TestBaseCross;
 
-public class C02_HardAssert extends TestBaseBeforeMethodAfterMethod {
+public class C02_HardAssert extends TestBaseCross {
 
     @Test
     public void test01() {
