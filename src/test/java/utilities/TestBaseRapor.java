@@ -16,6 +16,7 @@ public class TestBaseRapor {
     // test pass veya failed gibi bilgileri kaydeder. Ayrica ekran resmi icin de kullaniriz
     protected static ExtentHtmlReporter extentHtmlReporter; // Html raporu duzenler
     // Test işlemine başlamadan hemen önce (test methodundan önce değil, tüm test işleminden önce)
+
     @BeforeTest(alwaysRun = true) //alwaysRun : her zaman çalıştır.
     public void setUpTest() {
         extentReports = new ExtentReports(); // Raporlamayi baslatir
