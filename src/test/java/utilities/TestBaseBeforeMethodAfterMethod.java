@@ -24,7 +24,7 @@ public abstract class TestBaseBeforeMethodAfterMethod {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-        actions = new Actions(driver);
+
 
         LocalDateTime date = LocalDateTime.now();
         DateTimeFormatter formater = DateTimeFormatter.ofPattern("YYMMddHHmmss");
@@ -32,6 +32,7 @@ public abstract class TestBaseBeforeMethodAfterMethod {
     }
     @AfterMethod
     public void tearDown() {
-      driver.quit();
+
+        driver.quit();
     }
 }

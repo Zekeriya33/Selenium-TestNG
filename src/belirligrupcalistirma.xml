@@ -11,12 +11,12 @@ ve son olarak grupladigimiz methodlarin hangi package altinda oldugunu belirtmem
     <test name="belirli grup ">
         <groups>
             <run>
-                <include name="grup1"></include>
+                <include name="grup1"/>
             </run>
         </groups>
         <packages>
-            <package name="tests.day17"></package>
-            <package name="tests.day19"></package>
+            <package name="tests.day17"/>
+            <package name="tests.day19"/>
         </packages>
     </test>
     

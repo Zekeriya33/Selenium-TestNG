@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <!--Listener lari test class lara baglamak icin kullanilir-->
+    <listeners>
+        <listener class-name="utilities.Listeners"/>
+    </listeners>
+    <test verbose="2" preserve-order="true"
+          name="C:\Users\asus\IdeaProjects\com.Batch81TestNG\src\test\java\tests\ListenersTest1.java">
+        <classes>
+
+            <class name="tests.ListenersTest1">
+            </class>
+        </classes>
+    </test>
+</suite>
